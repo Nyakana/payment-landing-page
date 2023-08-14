@@ -8,11 +8,9 @@
 }
 .row{
     width: 100%;
-    
 }
 .container{
     background-color: rgb(17, 24, 39);
-    
 }
 .nav{
     display: flex;
@@ -35,7 +33,6 @@
     text-align: center;
     font-size: 18px;
     color: aliceblue;
-    
 }
 .nav_btns{
     display: flex;
@@ -53,26 +50,28 @@
     font-size: 18px;
     color:rgb(45, 38, 76);
 }
+.menu_bar{
+    width: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
 
 /* header */
-
-/* img{
-    width: 300px;
-} */
-
 .header{
     height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 .header_description{
     width: 40%;
+    padding-left: 36px;
 }
 .header_description-img{
    width: 600px;
    padding: 36px;
-   
+   margin: 0 auto;
 }
 p{
     color: aliceblue;
@@ -93,6 +92,8 @@ h1{
     padding: 16px;
     cursor: pointer;
 }
-.icon{
-    display: flex;
+
+/* responsiveness */
+@media only screen and (max-width: 1000px){
+    
 }
