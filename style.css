@@ -20,8 +20,11 @@
     padding: 0 50px;
 }
 .img_logo{
-    width: 80px;
+    width: 50px;
     margin: 0 16px;
+}
+.nav_menu{
+    display: flex;
 }
 .nav_links{
     display: flex;
@@ -51,14 +54,16 @@
     color:rgb(45, 38, 76);
 }
 .menu_bar{
-    width: 20px;
-    color: aliceblue;
+    width: 30px;
+    border-radius: 5px;
+    background-color: aliceblue;
     cursor: pointer;
+    display: none;
 }
 
 /* header */
 .header{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,7 +71,9 @@
 }
 .header_description{
     width: 40%;
-    padding-left: 36px;
+    display: flex;
+    flex-direction: column;
+   
 }
 .header_description-img{
    width: 600px;
@@ -85,6 +92,7 @@ h1{
     color: aliceblue;
 }
 .header_description-btn{
+    width: 200px;
     margin: 36px 0 0 0;
     border: none;
     border-radius: 10px;
@@ -94,6 +102,64 @@ h1{
 }
 
 /* responsiveness */
-@media only screen and (max-width: 1000px){
-    
+@media only screen and (max-width: 980px){
+    .nav_menu{
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        right: 0;
+        z-index: 2;
+        background: rgb(17, 24, 39);
+        position: absolute;
+        line-height: 2.5;
+        flex-direction: column;
+       
+    }
+    .nav_btns, .nav_links{
+        display: block;
+    }
+    .nav_link{
+        font-size: 40px;
+        font-weight: 400;
+        color: aliceblue;
+        padding-top: 8px;
+    }
+    .nav_link :hover{
+        background-color: bisque;
+    }
+    .nav_btn{
+        margin-top: 16px;
+        background: none;
+        border: none;
+    }
+    .nav_link-btn{
+        color: aliceblue;
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0 0 0 40px;
+    }
+    .menu_bar{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header_description, .header_description-img{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .header_description-btn{
+        width: 180px;
+        margin: 36px 0 36px 0;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 16px;
+        cursor: pointer;
+    }
 }
