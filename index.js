@@ -1,10 +1,10 @@
-document.getElementById(menuList);
-menuList.style.maxHeight == "0px";
-function toggleMenu(){
-    if (menuList.style.maxHeight == "0px"){
+var menuList = document.getElementById("menuList");
+menuList.style.maxHeight = "0px";
+
+function toggleMenu() {
+    if (menuList.style.maxHeight === "0px") {
         menuList.style.maxHeight = "100vh";
-    }
-    else{
+    } else {
         menuList.style.maxHeight = "0px";
     }
 }
